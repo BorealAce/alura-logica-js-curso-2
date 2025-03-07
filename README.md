@@ -1,4 +1,4 @@
 # 📚 Conteúdos
-- Introdução a criação de funções no Javascript;
-- Explicação das diferenças entre HTML, CSS e JS;
+- Funções com parâmetros;
+- Diferença entre funções com retorno e sem;
 - Utilização de funções do Javascript aliado ao HTML.
