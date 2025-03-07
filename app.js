@@ -6,7 +6,7 @@ function botaoClicado() {
 }
 
 function botaoClicadoAlerta() {
-    console.log('Eu amo JS');
+    alert('Eu amo JS');
 }
 
 function botaoClicadoPrompt() {

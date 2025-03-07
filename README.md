@@ -19,7 +19,7 @@ function botaoClicado() {
 3. **Crie uma função que exiba um alerta com a mensagem: Eu amo JS, sempre que o botão Alerta for pressionado.**
 - HTML: 
 ``` html
-<button onclick="botaoClicadoAlerta()" class="button">Alert<button>
+<button onclick="botaoClicadoAlerta()" class="button">Alert</button>
 ```
 - Javascript: 
 ```js
