@@ -1,55 +1,48 @@
 # 🚀 Resolução dos desafios – Lógica de Programação (Parte 2)
-## Desafio 1 - Respostas
-1. **Altere o conteúdo da tag h1 com document.querySelector e atribua o seguinte texto: Hora do Desafio.**
+## Desafio 2 - Respostas
+1. **Criar uma função que exibe "Olá, mundo!" no console.**
 ```js
-let header = document.querySelector('h1');
-header.innerHTML = 'Hora do Desafio';
-```
-2. **Crie uma função que exiba no console a mensagem O botão foi clicado sempre que o botão Console for pressionado.**
-- É necessário escrever a função no HTML:
-``` html
-<button onclick="botaoClicado()" class="button">Console</button>
-```
-- Depois atribui no Javascript:
-```js
-function botaoClicado() {
-    console.log('O botão foi clicado');
+function cumprimentar() {
+    console.log('Olá, mundo!');
 }
+cumprimentar();
 ```
-3. **Crie uma função que exiba um alerta com a mensagem: Eu amo JS, sempre que o botão Alerta for pressionado.**
-- HTML: 
-``` html
-<button onclick="botaoClicadoAlerta()" class="button">Alert</button>
-```
-- Javascript: 
+2. **Criar uma função que recebe um nome como parâmetro e exibe "Olá nome!" no console.**
 ```js
-function botaoClicadoAlerta() {
-    alert('Eu amo JS');
+function cumprimentarComNome(nome) {
+    console.log(`Olá ${nome}`);
 }
+cumprimentarComNome("Gabriel");
 ```
-4. **Crie uma função que é executada quando o botão prompt é clicado, perguntando o nome de uma cidade do Brasil. Em seguida, exiba um alerta com a mensagem concatenando a resposta com o texto: Estive em {cidade} e lembrei de você.**
-- HTML:
-``` html
-<button onclick="botaoClicadoPrompt()" class="button">Prompt</button>
-```
-- Javascript:
+3. **Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.**
 ```js
-function botaoClicadoPrompt() {
-    let cidade = prompt('Cite uma cidade do Brasil:');
-    alert(`Estive em ${cidade} e lembrei de você.`);
+function dobroDoNumero(numero) {
+    return numero * 2;
 }
+let resultadoDobro = dobroDoNumero(5);
+console.log(resultadoDobro);
 ```
-5. **Ao clicar no botão soma, peça 2 números inteiros e exiba o resultado da soma em um alerta.**
-- HTML:
-``` html
-<button onclick="botaoClicadoSoma()" class="button">Soma</button>
-```
-- Javascript:
+4. **Criar uma função que recebe três números como parâmetros e retorna a média deles.**
 ```js
-function botaoClicadoSoma() {
-    let numeroUm = Number(prompt('Digite o primeiro número para soma:'));
-    let numeroDois = Number(prompt('Digite o segundo número para soma:'));
-    const resultado = numeroUm + numeroDois;
-    alert(`A soma de ${numeroUm} + ${numeroDois} é ${resultado}`);   
+function mediaDeNumeros(num_1, num_2, num_3) {
+    return (num_1 + num_2 + num_3) / 3;
 }
+let resultadoMedia = mediaDeNumeros(2, 4, 10);
+console.log(resultadoMedia);
+```
+5. **Criar uma função que recebe dois números como parâmetros e retorna o maior deles.**
+```js
+function maiorNumero(num_a, num_b) {
+    return num_a > num_b ? num_a : num_b;
+}
+let resultadoMaior = maiorNumero(40, 28);
+console.log(resultadoMaior);
+```
+6. **Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo.**
+```js
+function quadradoDoNumero(num) {
+    return num * num;
+}
+let resultadoQuadrado = quadradoDoNumero(10);
+console.log(resultaQuadrado);
 ```
