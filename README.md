@@ -1,4 +1,3 @@
 # 📚 Conteúdos
-- Implementação do número de tentativas;
-- Manipulação do input e botões;
-- Introdução ao tipo Booleano.
+- Introdução e implementação de arrays para as tentativas;
+- Método includes e push para armazenamento do número tentado na lista;
